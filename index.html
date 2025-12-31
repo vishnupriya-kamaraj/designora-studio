@@ -2,94 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designora Studio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Designora Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="quote">"Creativity is intelligence having fun."</p>
+    </header>
 
-<header>
-    <nav>
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to Designora Studio</h2>
+            <button onclick="viewWorks()">View Our Works</button>
+        </div>
+    </section>
+
+    <section id="works">
+        <h2>Our Works</h2>
+        <div class="projects">
+            <!-- Add images or project placeholders -->
+            <div class="project">Project 1</div>
+            <div class="project">Project 2</div>
+            <div class="project">Project 3</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a creative studio specializing in graphic design and digital solutions. Our team:</p>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>Vishnu Priya K - Frontend Developer & Designer</li>
+            <li>Vasanth S - Backend Developer</li>
+            <li>Ubaidullah A - Full Stack Developer</li>
+            <li>Thejna AK - Graphic Designer</li>
+            <li>Tharuni S - UI/UX Designer</li>
         </ul>
-    </nav>
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <p class="quote">"Creativity is intelligence having fun."</p>
-            <button onclick="scrollToSection('portfolio')">View Our Works</button>
-        </div>
-        <div class="hero-image">
-            <img src="https://via.placeholder.com/400x300.png?text=Our+Team+or+Work" alt="Our Work">
-        </div>
-    </div>
-</header>
+    </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Designora Studio is a creative agency focused on crafting modern, responsive, 
-        and user-friendly digital experiences. Our team specializes in web design, 
-        branding, and interactive development, ensuring every project reflects 
-        professionalism and innovation.
-    </p>
-</section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-<section id="portfolio">
-    <h2>Our Works</h2>
-    <div class="works">
-        <div class="work">
-            <img src="https://via.placeholder.com/300x200.png?text=Project+1" alt="Project 1">
-            <p>Project 1 - Branding & Website</p>
-        </div>
-        <div class="work">
-            <img src="https://via.placeholder.com/300x200.png?text=Project+2" alt="Project 2">
-            <p>Project 2 - UI/UX Design</p>
-        </div>
-        <div class="work">
-            <img src="https://via.placeholder.com/300x200.png?text=Project+3" alt="Project 3">
-            <p>Project 3 - Creative Design</p>
-        </div>
-    </div>
-</section>
+    <footer>
+        <p>© 2025 Designora Studio</p>
+    </footer>
 
-<section id="team">
-    <h2>Our Team</h2>
-    <div class="team-members">
-        <div class="member">
-            <h3>Vishnu Priya K</h3>
-            <p>Frontend Developer & UI Designer</p>
-        </div>
-        <div class="member">
-            <h3>Vasanth S</h3>
-            <p>Backend Developer & Database</p>
-        </div>
-        <div class="member">
-            <h3>Ubaidullah A</h3>
-            <p>Project Manager & Deployment</p>
-        </div>
-        <div class="member">
-            <h3>Thejna AK</h3>
-            <p>Content & Documentation</p>
-        </div>
-        <div class="member">
-            <h3>Tharuni S</h3>
-            <p>UI/UX Designer & Creative</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: designora@gmail.com</p>
-    <p>Phone: +91 98765 43210</p>
-</section>
-
-<footer>
-    <p>© 2025 Designora Studio. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
