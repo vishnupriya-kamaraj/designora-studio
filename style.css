@@ -1,74 +1,110 @@
+/* Basic Reset */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
+header button {
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+header button:hover {
+    opacity: 0.8;
+}
+
+/* Navigation */
 nav {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
 }
 
 nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* Sections */
 section {
-  background: white;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 10px;
+    background: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-h2 {
-  color: #111;
+/* Team Section */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+.member {
+    background: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
-button {
-  background-color: #111;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+.member h3 {
+    margin: 10px 0 5px 0;
 }
 
-button:hover {
-  background-color: #555;
+.member p {
+    color: #555;
+    font-size: 14px;
 }
 
-input, textarea {
-  width: 95%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
+/* Footer */
 footer {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 10px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 10px;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+    header button {
+        width: 100%;
+        padding: 15px;
+    }
+}
