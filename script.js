@@ -1,5 +1,4 @@
-function welcome() {
-    // Scroll to services section instead of alert
-    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+// Scroll to section smoothly
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
-
