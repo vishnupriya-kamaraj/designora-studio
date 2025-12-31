@@ -1,136 +1,121 @@
-/* GLOBAL */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #08080f;
-    color: white;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  min-height: 100vh;
 }
 
 /* HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-.logo span {
-    color: #9b7cff;
+  font-size: 22px;
+  font-weight: bold;
+  color: #a78bfa;
 }
 
-.nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+nav {
+  display: flex;
+  gap: 20px;
 }
 
-/* HERO */
-.hero-section {
-    text-align: center;
-    padding: 50px 20px;
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
-.hero-section h1 {
-    font-size: 40px;
-    line-height: 1.2;
-}
-
-.hero-text {
-    margin: 15px auto;
-    color: #cfcfcf;
-    max-width: 600px;
-}
-
-.hero-buttons {
-    margin-top: 20px;
-    gap: 15px;
-}
-
-.btn {
-    padding: 10px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    border: 2px solid transparent;
-}
-
-.primary {
-    background: #9b7cff;
-    color: black;
-}
-
-.outline {
-    background: none;
-    border-color: #9b7cff;
-    color: #9b7cff;
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* SECTIONS */
 .section {
-    padding: 50px 20px;
-    text-align: center;
+  display: none;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.dark-section {
-    background: #0d0d1a;
+.section.active {
+  display: block;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
+/* HOME */
+h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 22px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.outline {
+  background: transparent;
+  border: 2px solid #8b5cf6;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  width: 200px;
 }
 
-/* CONTACT */
-.contact-info {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 15px;
-    background: #111;
-    margin-top: 30px;
-}
-
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #1f1b3a;
+    padding: 15px;
+    border-radius: 10px;
+  }
 
-    .nav a {
-        display: block;
-        margin: 8px 0;
-    }
+  nav.show {
+    display: flex;
+  }
 
-    .hero-section h1 {
-        font-size: 30px;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .card {
-        width: 90%;
-    }
+  h1 {
+    font-size: 30px;
+  }
 }
