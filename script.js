@@ -1,4 +1,5 @@
 function welcome() {
-  alert("Welcome to Designora Studio! Let's create something amazing.");
+    // Scroll to services section instead of alert
+    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
 }
 
