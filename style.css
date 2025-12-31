@@ -1,166 +1,118 @@
-/* Basic Reset */
-body, html {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
 }
 
-/* Header & Navigation */
-header {
+body {
+    font-family: Arial, sans-serif;
     background-color: #111;
-    color: white;
+    color: #fff;
+}
+
+header {
+    padding: 15px;
+    position: relative;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav {
+    float: right;
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
     list-style: none;
-    padding: 10px 20px;
-    margin: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
-}
-
-.hero-text {
-    max-width: 500px;
+    color: #fff;
 }
 
 .quote {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-style: italic;
 }
 
-.hero-text button {
-    background: linear-gradient(90deg, #ff7f50, #ff4500);
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero-text button:hover {
-    opacity: 0.85;
-}
-
-.hero-image img {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Sections */
 section {
-    background: white;
-    margin: 20px;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-/* Portfolio */
-.works {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.work {
-    margin: 10px;
+    padding: 50px 15px;
     text-align: center;
 }
 
-.work img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+.home-content button {
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Team */
-.team-members {
+.projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
-.member {
-    background: #fff;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
+.project {
+    background-color: #333;
+    padding: 50px;
+    width: 250px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-/* Footer */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: #6c5ce7;
+    color: #fff;
+    cursor: pointer;
+}
+
 footer {
+    padding: 20px;
     text-align: center;
-    background-color: #111;
-    color: white;
-    padding: 15px;
+    background-color: #222;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero {
-        flex-direction: column;
+/* Responsive for mobile */
+@media(max-width: 768px){
+    nav {
+        float: none;
         text-align: center;
+        margin-top: 10px;
     }
-
     nav ul {
         flex-direction: column;
-        align-items: center;
     }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 768px) {
     .quote {
-        font-size: 20px;
+        position: static;
+        text-align: center;
+        margin-top: 10px;
     }
-
-    .hero-text button {
-        width: 100%;
-    }
-
-    section {
-        margin: 10px;
-        padding: 20px;
-    }
-
-    .works {
+    .projects {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .team-members {
-        flex-direction: column;
-        align-items: center;
     }
 }
