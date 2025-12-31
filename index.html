@@ -1,85 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Designora Studio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designora Studio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- HEADER + NAV -->
-    <header class="header">
-        <div class="logo">Designora <span>Studio</span></div>
-        <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#works">Works</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header>
+  <div class="logo">Designora Studio</div>
 
-    <!-- HERO / FIRST SCREEN -->
-    <section id="home" class="hero-section">
-        <h1>Designing Brands.<br>Building Experiences.</h1>
-        <p class="hero-text">We craft modern and creative designs that help you shine online.</p>
-        <div class="hero-buttons">
-            <button class="btn primary" onclick="scrollToSection('works')">View Our Works</button>
-            <button class="btn outline" onclick="scrollToSection('contact')">Contact Us</button>
-        </div>
-    </section>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
-    <!-- WORKS -->
-    <section id="works" class="section">
-        <h2>Our Works</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Brand Identity</h3>
-                <p>Logos, themes & branding ideas.</p>
-            </div>
-            <div class="card">
-                <h3>Poster Designs</h3>
-                <p>Creative posters for social media.</p>
-            </div>
-            <div class="card">
-                <h3>UI Mockups</h3>
-                <p>Web & mobile interface designs.</p>
-            </div>
-        </div>
-    </section>
+  <nav id="navMenu">
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('works')">Our Works</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+</header>
 
-    <!-- ABOUT -->
-    <section id="about" class="section dark-section">
-        <h2>About Us</h2>
-        <p class="about-text">
-            Designora Studio is a creative agency focused on modern visual design, branding, and digital experiences.
-            Our team works together to build thoughtful, stylish design solutions that help businesses grow online.
-        </p>
-    </section>
+<!-- HOME -->
+<section id="home" class="section active">
+  <h1>Designing Ideas.<br>Creating Impact.</h1>
+  <p>We craft modern and meaningful digital designs.</p>
 
-    <!-- TEAM -->
-    <section id="team" class="section">
-        <h2>Our Team</h2>
-        <div class="card-container">
-            <div class="card"><h3>Vishnu Priya K</h3><p>Frontend Developer & UI Designer</p></div>
-            <div class="card"><h3>Vasanth S</h3><p>Backend Developer & Database</p></div>
-            <div class="card"><h3>Ubaidullah A</h3><p>Project Manager & Deployment</p></div>
-            <div class="card"><h3>Thejna AK</h3><p>Content & Documentation</p></div>
-            <div class="card"><h3>Tharuni S</h3><p>UI/UX Designer</p></div>
-        </div>
-    </section>
+  <div class="buttons">
+    <button onclick="showSection('works')">View Our Works</button>
+    <button class="outline" onclick="showSection('contact')">Contact Us</button>
+  </div>
+</section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section dark-section">
-        <h2>Contact</h2>
-        <p class="contact-info">Email: designorastudio@gmail.com</p>
-        <p class="contact-info">Phone: +91 98765 43210</p>
-    </section>
+<!-- WORKS -->
+<section id="works" class="section">
+  <h2>Our Works</h2>
+  <p>Sample creative works and concept designs.</p>
 
-    <footer class="footer">
-        © 2025 Designora Studio
-    </footer>
+  <div class="cards">
+    <div class="card">Logo Design</div>
+    <div class="card">Poster Design</div>
+    <div class="card">Website UI</div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    We are a creative design studio focused on branding, UI design,
+    and visual storytelling.
+  </p>
+
+  <h3>Our Team</h3>
+  <ul>
+    <li>Vishnu Priya K – Frontend & UI</li>
+    <li>Vasanth S – Backend & Deployment</li>
+    <li>Ubaidullah A – Design Research</li>
+    <li>Thejna AK – Content & Branding</li>
+    <li>Tharuni S – Creative Strategy</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Email: designorastudio@gmail.com</p>
+  <p>Instagram: @designora_studio</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
