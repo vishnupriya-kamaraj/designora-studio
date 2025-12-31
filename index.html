@@ -4,12 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Designora Studio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <div class="logo">Designora Studio</div>
+  <div class="logo">Designora <span>Studio</span></div>
 
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
@@ -22,52 +26,103 @@
 </header>
 
 <!-- HOME -->
-<section id="home" class="section active">
-  <h1>Designing Ideas.<br>Creating Impact.</h1>
-  <p>We craft modern and meaningful digital designs.</p>
+<section id="home" class="section active hero">
+  <h1>Where Creativity<br>Meets Purpose</h1>
+
+  <p class="hero-sub">
+    Designora Studio is a creative design agency focused on crafting
+    visually stunning and meaningful digital experiences.
+  </p>
 
   <div class="buttons">
     <button onclick="showSection('works')">View Our Works</button>
     <button class="outline" onclick="showSection('contact')">Contact Us</button>
+  </div>
+
+  <div class="scroll-text">
+    Scroll down to know more about our journey ↓
+  </div>
+
+  <div class="learn-more" onclick="showSection('about')">
+    Learn More
   </div>
 </section>
 
 <!-- WORKS -->
 <section id="works" class="section">
   <h2>Our Works</h2>
-  <p>Sample creative works and concept designs.</p>
 
   <div class="cards">
-    <div class="card">Logo Design</div>
-    <div class="card">Poster Design</div>
-    <div class="card">Website UI</div>
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>
+        We create modern, responsive and user-friendly website designs
+        that provide a strong digital presence and smooth user experience.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>UI / UX Design</h3>
+      <p>
+        Our UI/UX designs focus on usability, accessibility and aesthetics,
+        ensuring every interface feels intuitive and engaging.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Branding & Posters</h3>
+      <p>
+        From brand identity to social media posters, we design visuals
+        that communicate ideas clearly and creatively.
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section dark">
   <h2>About Us</h2>
-  <p>
-    We are a creative design studio focused on branding, UI design,
-    and visual storytelling.
+
+  <p class="about-text">
+    Designora Studio is a passionate and creative team of designers and developers
+    who believe that good design is more than just visuals — it is about telling
+    a story, creating impact, and solving problems. As a newly formed creative
+    studio, we focus on learning, experimenting, and building meaningful digital
+    experiences through collaboration and innovation.
+    <br><br>
+    Our mission is to deliver clean, modern, and user-centric designs while
+    continuously improving our skills and adapting to the evolving digital world.
+    We value creativity, teamwork, and attention to detail in everything we do.
   </p>
 
-  <h3>Our Team</h3>
-  <ul>
-    <li>Vishnu Priya K – Frontend & UI</li>
-    <li>Vasanth S – Backend & Deployment</li>
-    <li>Ubaidullah A – Design Research</li>
-    <li>Thejna AK – Content & Branding</li>
-    <li>Tharuni S – Creative Strategy</li>
+  <h3 class="team-title">Our Team</h3>
+  <ul class="team-list">
+    <li><strong>Vishnu Priya K</strong> – Frontend Developer & UI Designer</li>
+    <li><strong>Vasanth S</strong> – Backend Developer & Deployment</li>
+    <li><strong>Ubaidullah A</strong> – Project Coordination & Research</li>
+    <li><strong>Thejna AK</strong> – Content & Branding</li>
+    <li><strong>Tharuni S</strong> – Creative & Visual Design</li>
   </ul>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p>Email: designorastudio@gmail.com</p>
-  <p>Instagram: @designora_studio</p>
+<section id="contact" class="section contact">
+  <h2>Get in Touch</h2>
+
+  <p class="contact-line">
+    Let’s collaborate and create something amazing together.
+  </p>
+
+  <div class="contact-box">
+    <p>📧 designorastudio@gmail.com</p>
+    <p>📞 +91 9XXXXXXXXX</p>
+    <p>📍 India</p>
+  </div>
 </section>
+
+<footer>
+  © 2025 Designora Studio
+</footer>
 
 <script src="script.js"></script>
 </body>
