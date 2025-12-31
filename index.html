@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designora Studio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameForge Studios</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Designora Studio</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <p class="quote">"Creativity is intelligence having fun."</p>
-    </header>
 
-    <section id="home">
-        <div class="home-content">
-            <h2>Welcome to Designora Studio</h2>
-            <button onclick="viewWorks()">View Our Works</button>
-        </div>
-    </section>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">GameForge <span>Studios</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#works">Our Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="works">
-        <h2>Our Works</h2>
-        <div class="projects">
-            <!-- Add images or project placeholders -->
-            <div class="project">Project 1</div>
-            <div class="project">Project 2</div>
-            <div class="project">Project 3</div>
-        </div>
-    </section>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Crafting Worlds.<br>Forging Legends.</h1>
+    <p>We create immersive and innovative gaming experiences.</p>
+    <div class="buttons">
+      <a href="#works" class="btn primary">View Our Works</a>
+      <a href="#contact" class="btn outline">Contact Us</a>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a creative studio specializing in graphic design and digital solutions. Our team:</p>
-        <ul>
-            <li>Vishnu Priya K - Frontend Developer & Designer</li>
-            <li>Vasanth S - Backend Developer</li>
-            <li>Ubaidullah A - Full Stack Developer</li>
-            <li>Thejna AK - Graphic Designer</li>
-            <li>Tharuni S - UI/UX Designer</li>
-        </ul>
-    </section>
+  <!-- WORKS -->
+  <section id="works" class="section">
+    <h2>Our Works</h2>
+    <p class="section-text">
+      As a newly formed studio, we are actively building exciting concepts,
+      prototypes, and creative experiments.
+    </p>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <div class="cards">
+      <div class="card">
+        <h3>Concept Game Project</h3>
+        <p>Early-stage game idea focusing on story-driven gameplay.</p>
+      </div>
+      <div class="card">
+        <h3>Prototype Demo</h3>
+        <p>Small playable demo to test mechanics and visuals.</p>
+      </div>
+      <div class="card">
+        <h3>Creative Experiments</h3>
+        <p>Design tests, UI concepts, and level ideas.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Designora Studio</p>
-    </footer>
+  <!-- ABOUT -->
+  <section id="about" class="section dark">
+    <h2>About Us</h2>
+    <p class="section-text">
+      GameForge Studios is a passionate indie game development team focused on
+      creativity, storytelling, and innovation. We believe in learning,
+      experimenting, and growing together as a studio.
+    </p>
 
-    <script src="script.js"></script>
+    <div class="cards">
+      <div class="card">
+        <h3>Vishnu Priya K</h3>
+        <p>Founder & Game Designer</p>
+      </div>
+      <div class="card">
+        <h3>Vasanth S</h3>
+        <p>Gameplay Programmer</p>
+      </div>
+      <div class="card">
+        <h3>Ubaidullah A</h3>
+        <p>Technical Lead</p>
+      </div>
+      <div class="card">
+        <h3>Thejna AK</h3>
+        <p>UI / UX Designer</p>
+      </div>
+      <div class="card">
+        <h3>Tharuni S</h3>
+        <p>Creative Artist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p class="section-text">
+      Interested in collaborating or learning more about us?  
+      Reach out and let’s build something amazing together.
+    </p>
+    <p class="contact-email">📧 gameforgestudios@email.com</p>
+  </section>
+
 </body>
 </html>
